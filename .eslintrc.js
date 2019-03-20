@@ -1,0 +1,21 @@
+module.exports = {
+  root: true,
+  parser: 'babel-eslint',
+  parserOptions: {
+    sourceType: 'module'
+  },
+  env: {
+    browser: true,
+  },
+  extends: 'standard',
+  plugins: [
+    'html'
+  ],
+  'rules': {
+    //语句强制分号结尾
+    "semi": [2, "always"],
+    'arrow-parens': 0,
+    'generator-star-spacing': 0,
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+  }
+}
